@@ -1,1 +1,19 @@
 Initial commit
+
+Source images and button name/description
+
+Pardalote	http://www.outgrabe.net/bird00.jpg	Pardalote by fir0002 (CC-by-NC)
+Purple Swamp Hen	http://www.outgrabe.net/bird01.jpg	Purple swamp hen by Toby Hudson (CC-by-SA)
+White-headed Stilt	http://www.outgrabe.net/bird02.jpg	White-headed Stilt by JJ Harrison (CC-by-SA)
+Inland Thornbill	http://www.outgrabe.net/bird03.jpg	Inland Thornbill by Peter Jacobs (CC-by-SA)
+Rose Robin	http://www.outgrabe.net/bird04.jpg	Rose Robin by JJ Harrison (CC-by-SA)
+
+
+Color palette
+
+Create two color palettes in your CSS. There must be 5 colors in each. You can choose any color values you like. The required variable names for your colors are:
+primary-color
+secondary-color
+bg-color
+font-color
+heading-color
