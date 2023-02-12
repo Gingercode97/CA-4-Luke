@@ -12,15 +12,25 @@
   </head>
     
  <body>
-   <img src="http://www.outgrabe.net/bird00.jpg" alt="Yellow bird">
+   <img id ="bird" src="http://www.outgrabe.net/bird00.jpg" alt="Yellow bird">
  
     <p>
-        <button>Pardalote</button>
+        Pardalote by fir0002 (CC-by-NC)
+        <p id="Photographer"></p>
+        <button onclick="changebird ()">Pardalote</button>
         <button>Purple Swamp Hen</button>
         <button> White-headed Stilt</button>
         <button>Inland Thornbill</button>
         <button>Rose Robin</button>
 
+
+        <script>
+            function changebird(birdname) {
+             let img = document.querySelector("bird")   
+             img.setAttribute('src', birdname);
+            }
+
+        </script>
 
 
 
