@@ -2,39 +2,108 @@
 <html>
  <head>
      <title>Nice Birds</title>
+     
     <style>
-        
-
-
+          :root {
+        --primary-color: rgb(200, 199, 199);
+        --secondary-color: rgb(144, 5, 200);
+        --bg-color: rgb(4, 229, 241);
+        --font-color: black;
+        --heading-color: green;
+       }  
+       [data-theme='Dark'] 
+    
+       html {
+        max-width: 66.6em;
+        }
+       
+       body {
+        background-color: var(--bg-color);
+        max-width:80%
+       }
+       main {
+        border-style: solid;border-color: var(--secondary-color);
+       }
+       p {
+        border-style: solid;padding: 1em;
+        background-color: var(--primary-color);
+        color: var(--font-color);
+        border-color: var(--secondary-color);
+        text-align: center;
+       }
+       section {
+        border-style: solid;
+        border-color: var(--secondary-color);
+        padding: 0.5em;
+        background-color: var(--heading-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+       }
+    
+    
     </style>
+       
 
 
   </head>
     
  <body>
-   <img id ="bird" src="http://www.outgrabe.net/bird00.jpg" alt="Yellow bird">
- 
-    <p>
+    <main>
+   <img id ="birdimg" src="http://www.outgrabe.net/bird00.jpg" alt="picture of a bird">
+    </main>
+  <p id = "photographer">
         Pardalote by fir0002 (CC-by-NC)
-        <p id="Photographer"></p>
-        <button onclick="changebird ()">Pardalote</button>
-        <button>Purple Swamp Hen</button>
-        <button> White-headed Stilt</button>
-        <button>Inland Thornbill</button>
-        <button>Rose Robin</button>
+        
+  </p>
+  
+  
+  <section>
+    <button id = "b1">Pardalote</button>
+    <button id = "b2">Purple Swamp Hen</button>
+    <button id = "b3"> White-heade Stilt</button>
+    <button id = "b4">Inland Thornbill</button>
+    <button id = "b5">Rose Robin</button>
 
-
+  </section>
         <script>
-            function changebird(birdname) {
-             let img = document.querySelector("bird")   
-             img.setAttribute('src', birdname);
+            document.querySelector("#b1").onclick = function(){
+                var bird = document.getElementById('birdimg');
+                bird.src = "http://www.outgrabe.net/bird00.jpg";
+                var info = document.getElementById('photographer');
+                info.innerHTML = "Pardalote by fir0002 (CC-by-NC)"
             }
-
+            document.querySelector("#b2").onclick = function(){
+                var bird = document.getElementById('birdimg');
+                bird.src = "http://www.outgrabe.net/bird01.jpg";
+                var info = document.getElementById('photographer');
+                info.innerHTML = "Purple swamp hen by Toby Hudson (CC-by-SA)"
+            }
+            document.querySelector("#b3").onclick = function(){
+                var bird = document.getElementById('birdimg');
+                bird.src = "http://www.outgrabe.net/bird02.jpg";
+                var info = document.getElementById('photographer');
+                info.innerHTML = "White-headed Stilt by JJ Harrison (CC-by-SA)"
+            }
+            document.querySelector("#b4").onclick = function(){
+                var bird = document.getElementById('birdimg');
+                bird.src = "http://www.outgrabe.net/bird03.jpg";
+                var info = document.getElementById('photographer');
+                info.innerHTML = "Inland Thornbill by Peter Jacobs (CC-by-SA)"
+            }
+            document.querySelector("#b5").onclick = function(){
+                var bird = document.getElementById('birdimg');
+                bird.src = "http://www.outgrabe.net/bird04.jpg";
+                var info = document.getElementById('photographer');
+                info.innerHTML = "Rose Robin by JJ Harrison (CC-by-SA)"
+            }
         </script>
 
 
 
-    </p>
+    
 
 
 
