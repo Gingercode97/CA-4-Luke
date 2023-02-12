@@ -12,12 +12,12 @@
         --heading-color: green;
        }  
 
-       [data-theme='Dark'] {
+       [data-theme="dark"] {
         --primary-color: rgb(49, 49, 49);
-        --secondary-color: rgb(45, 31, 76);
+        --secondary-color: rgb(199, 99, 33);
         --bg-color: black;
         --font-color: white;
-        --heading-color: rgb(88, 13, 13);
+        --heading-color: rgb(96, 13, 59);
         }
     
        html {
@@ -61,15 +61,9 @@
     
     </style>
        
-    <script>
-        function themeChange () {
-            var t = document.querySelector("root");
-            t.setAttribute("data-theme", "Dark");
-        }
-    </script>
-
-  </head>
     
+  </head>
+  
  <body>
     <main>
    <img id ="birdimg" src="http://www.outgrabe.net/bird00.jpg" alt="picture of a bird" width = "100%"" height="100%">
@@ -121,7 +115,24 @@
             }
         </script>
 
+<button id = tb onclick="themeChange()";>Change Theme</button>
 
+        <script>
+            var isLight = true;
+            function themeChange () {
+                var e = document.querySelector(":root");
+                if ( isLight === true) {
+                    e.setAttribute("data-theme", "dark");
+                    isLight = false;
+                } else {
+                    e.setAttribute("data-theme", "light");
+                    isLight = true;
+                }
+            }
+            
+        </script>
+
+        
 
     
 
